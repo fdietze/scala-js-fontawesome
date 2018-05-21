@@ -1,3 +1,4 @@
+organization := "com.github.fdietze"
 name := "scala-js-fontawesome"
 version := "master-SNAPSHOT"
 
