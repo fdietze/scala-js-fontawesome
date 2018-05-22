@@ -22,14 +22,13 @@ Facade for the JS/SVG version of the FontAwesome icons.
   fontawesome.icon(freeSolid.faTrash).`abstract`
 
   fontawesome.layer(push => {
-    push(fontawesome.icon(freeSolid.faCircle, Params(
-      styles = scalajs.js.Dictionary[String]( "color" -> "#4EBA4C" )
-    )))
-    push(fontawesome.icon(freeSolid.faSync, Params(
-      transform = new Transform{override val size = 10.0},
-      classes = scalajs.js.Array("fa-spin"),
-      styles = scalajs.js.Dictionary[String]( "color" -> "white" ),
-    )))
+    push(fontawesome.icon(freeSolid.faCircle, new Params{
+      styles = scalajs.js.Dictionary[String]( "color" -> "#4EBA4C" )}))
+    push(fontawesome.icon(freeSolid.faSync, new Params{
+      transform = new Transform{size = 10.0}
+      classes = scalajs.js.Array("fa-spin")
+      styles = scalajs.js.Dictionary[String]( "color" -> "white" )
+    }))
   })
   ```
 
