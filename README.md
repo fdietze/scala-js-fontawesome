@@ -35,6 +35,8 @@ Facade for the JS/SVG version of the FontAwesome icons.
 
   Also Check out the Facade Code: [FontAwesome.scala](src/main/scala/FontAwesome.scala).
 
+* Feel free to open issues.
+
 ## Usage with Outwatch
 
 ```scala
