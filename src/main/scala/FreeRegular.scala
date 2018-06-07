@@ -3,131 +3,129 @@ package fontAwesome
 import scala.scalajs.js
 import scala.scalajs.js.annotation._
 
-@js.native
-@JSImport("@fortawesome/fontawesome-free-regular", JSImport.Namespace)
-object freeRegular extends js.Object {
+object freeRegular {
   // https://github.com/FortAwesome/Font-Awesome/blob/master/advanced-options/use-with-node-js/fontawesome-free-regular/index.d.ts
   // using vim:
-  // :read !curl --silent https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$FAVERSION/advanced-options/use-with-node-js/fontawesome-free-regular/index.d.ts | grep "export const fa" | sed -E "s/export const (.+): IconDefinition;/  def \1: IconDefinition = js.native/"
+  // :read !export FAVERSION=5.0.13; curl --silent https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$FAVERSION/advanced-options/use-with-node-js/fontawesome-free-regular/index.d.ts | grep "export const fa" | sed -E "s/export const (.+): IconDefinition;/  @js.native @JSImport(\"@fortawesome\/fontawesome-free-solid\", \"\1\") object \1 extends IconDefinition/"
 
-  def faAddressBook: IconDefinition = js.native
-  def faAddressCard: IconDefinition = js.native
-  def faArrowAltCircleDown: IconDefinition = js.native
-  def faArrowAltCircleLeft: IconDefinition = js.native
-  def faArrowAltCircleRight: IconDefinition = js.native
-  def faArrowAltCircleUp: IconDefinition = js.native
-  def faBell: IconDefinition = js.native
-  def faBellSlash: IconDefinition = js.native
-  def faBookmark: IconDefinition = js.native
-  def faBuilding: IconDefinition = js.native
-  def faCalendar: IconDefinition = js.native
-  def faCalendarAlt: IconDefinition = js.native
-  def faCalendarCheck: IconDefinition = js.native
-  def faCalendarMinus: IconDefinition = js.native
-  def faCalendarPlus: IconDefinition = js.native
-  def faCalendarTimes: IconDefinition = js.native
-  def faCaretSquareDown: IconDefinition = js.native
-  def faCaretSquareLeft: IconDefinition = js.native
-  def faCaretSquareRight: IconDefinition = js.native
-  def faCaretSquareUp: IconDefinition = js.native
-  def faChartBar: IconDefinition = js.native
-  def faCheckCircle: IconDefinition = js.native
-  def faCheckSquare: IconDefinition = js.native
-  def faCircle: IconDefinition = js.native
-  def faClipboard: IconDefinition = js.native
-  def faClock: IconDefinition = js.native
-  def faClone: IconDefinition = js.native
-  def faClosedCaptioning: IconDefinition = js.native
-  def faComment: IconDefinition = js.native
-  def faCommentAlt: IconDefinition = js.native
-  def faCommentDots: IconDefinition = js.native
-  def faComments: IconDefinition = js.native
-  def faCompass: IconDefinition = js.native
-  def faCopy: IconDefinition = js.native
-  def faCopyright: IconDefinition = js.native
-  def faCreditCard: IconDefinition = js.native
-  def faDotCircle: IconDefinition = js.native
-  def faEdit: IconDefinition = js.native
-  def faEnvelope: IconDefinition = js.native
-  def faEnvelopeOpen: IconDefinition = js.native
-  def faEye: IconDefinition = js.native
-  def faEyeSlash: IconDefinition = js.native
-  def faFile: IconDefinition = js.native
-  def faFileAlt: IconDefinition = js.native
-  def faFileArchive: IconDefinition = js.native
-  def faFileAudio: IconDefinition = js.native
-  def faFileCode: IconDefinition = js.native
-  def faFileExcel: IconDefinition = js.native
-  def faFileImage: IconDefinition = js.native
-  def faFilePdf: IconDefinition = js.native
-  def faFilePowerpoint: IconDefinition = js.native
-  def faFileVideo: IconDefinition = js.native
-  def faFileWord: IconDefinition = js.native
-  def faFlag: IconDefinition = js.native
-  def faFolder: IconDefinition = js.native
-  def faFolderOpen: IconDefinition = js.native
-  def faFontAwesomeLogoFull: IconDefinition = js.native
-  def faFrown: IconDefinition = js.native
-  def faFutbol: IconDefinition = js.native
-  def faGem: IconDefinition = js.native
-  def faHandLizard: IconDefinition = js.native
-  def faHandPaper: IconDefinition = js.native
-  def faHandPeace: IconDefinition = js.native
-  def faHandPointDown: IconDefinition = js.native
-  def faHandPointLeft: IconDefinition = js.native
-  def faHandPointRight: IconDefinition = js.native
-  def faHandPointUp: IconDefinition = js.native
-  def faHandPointer: IconDefinition = js.native
-  def faHandRock: IconDefinition = js.native
-  def faHandScissors: IconDefinition = js.native
-  def faHandSpock: IconDefinition = js.native
-  def faHandshake: IconDefinition = js.native
-  def faHdd: IconDefinition = js.native
-  def faHeart: IconDefinition = js.native
-  def faHospital: IconDefinition = js.native
-  def faHourglass: IconDefinition = js.native
-  def faIdBadge: IconDefinition = js.native
-  def faIdCard: IconDefinition = js.native
-  def faImage: IconDefinition = js.native
-  def faImages: IconDefinition = js.native
-  def faKeyboard: IconDefinition = js.native
-  def faLemon: IconDefinition = js.native
-  def faLifeRing: IconDefinition = js.native
-  def faLightbulb: IconDefinition = js.native
-  def faListAlt: IconDefinition = js.native
-  def faMap: IconDefinition = js.native
-  def faMeh: IconDefinition = js.native
-  def faMinusSquare: IconDefinition = js.native
-  def faMoneyBillAlt: IconDefinition = js.native
-  def faMoon: IconDefinition = js.native
-  def faNewspaper: IconDefinition = js.native
-  def faObjectGroup: IconDefinition = js.native
-  def faObjectUngroup: IconDefinition = js.native
-  def faPaperPlane: IconDefinition = js.native
-  def faPauseCircle: IconDefinition = js.native
-  def faPlayCircle: IconDefinition = js.native
-  def faPlusSquare: IconDefinition = js.native
-  def faQuestionCircle: IconDefinition = js.native
-  def faRegistered: IconDefinition = js.native
-  def faSave: IconDefinition = js.native
-  def faShareSquare: IconDefinition = js.native
-  def faSmile: IconDefinition = js.native
-  def faSnowflake: IconDefinition = js.native
-  def faSquare: IconDefinition = js.native
-  def faStar: IconDefinition = js.native
-  def faStarHalf: IconDefinition = js.native
-  def faStickyNote: IconDefinition = js.native
-  def faStopCircle: IconDefinition = js.native
-  def faSun: IconDefinition = js.native
-  def faThumbsDown: IconDefinition = js.native
-  def faThumbsUp: IconDefinition = js.native
-  def faTimesCircle: IconDefinition = js.native
-  def faTrashAlt: IconDefinition = js.native
-  def faUser: IconDefinition = js.native
-  def faUserCircle: IconDefinition = js.native
-  def faWindowClose: IconDefinition = js.native
-  def faWindowMaximize: IconDefinition = js.native
-  def faWindowMinimize: IconDefinition = js.native
-  def faWindowRestore: IconDefinition = js.native
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faAddressBook") object faAddressBook extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faAddressCard") object faAddressCard extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faArrowAltCircleDown") object faArrowAltCircleDown extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faArrowAltCircleLeft") object faArrowAltCircleLeft extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faArrowAltCircleRight") object faArrowAltCircleRight extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faArrowAltCircleUp") object faArrowAltCircleUp extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faBell") object faBell extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faBellSlash") object faBellSlash extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faBookmark") object faBookmark extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faBuilding") object faBuilding extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCalendar") object faCalendar extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCalendarAlt") object faCalendarAlt extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCalendarCheck") object faCalendarCheck extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCalendarMinus") object faCalendarMinus extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCalendarPlus") object faCalendarPlus extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCalendarTimes") object faCalendarTimes extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCaretSquareDown") object faCaretSquareDown extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCaretSquareLeft") object faCaretSquareLeft extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCaretSquareRight") object faCaretSquareRight extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCaretSquareUp") object faCaretSquareUp extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faChartBar") object faChartBar extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCheckCircle") object faCheckCircle extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCheckSquare") object faCheckSquare extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCircle") object faCircle extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faClipboard") object faClipboard extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faClock") object faClock extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faClone") object faClone extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faClosedCaptioning") object faClosedCaptioning extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faComment") object faComment extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCommentAlt") object faCommentAlt extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCommentDots") object faCommentDots extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faComments") object faComments extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCompass") object faCompass extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCopy") object faCopy extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCopyright") object faCopyright extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faCreditCard") object faCreditCard extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faDotCircle") object faDotCircle extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faEdit") object faEdit extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faEnvelope") object faEnvelope extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faEnvelopeOpen") object faEnvelopeOpen extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faEye") object faEye extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faEyeSlash") object faEyeSlash extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFile") object faFile extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFileAlt") object faFileAlt extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFileArchive") object faFileArchive extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFileAudio") object faFileAudio extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFileCode") object faFileCode extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFileExcel") object faFileExcel extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFileImage") object faFileImage extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFilePdf") object faFilePdf extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFilePowerpoint") object faFilePowerpoint extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFileVideo") object faFileVideo extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFileWord") object faFileWord extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFlag") object faFlag extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFolder") object faFolder extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFolderOpen") object faFolderOpen extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFontAwesomeLogoFull") object faFontAwesomeLogoFull extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFrown") object faFrown extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faFutbol") object faFutbol extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faGem") object faGem extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faHandLizard") object faHandLizard extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faHandPaper") object faHandPaper extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faHandPeace") object faHandPeace extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faHandPointDown") object faHandPointDown extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faHandPointLeft") object faHandPointLeft extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faHandPointRight") object faHandPointRight extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faHandPointUp") object faHandPointUp extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faHandPointer") object faHandPointer extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faHandRock") object faHandRock extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faHandScissors") object faHandScissors extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faHandSpock") object faHandSpock extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faHandshake") object faHandshake extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faHdd") object faHdd extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faHeart") object faHeart extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faHospital") object faHospital extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faHourglass") object faHourglass extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faIdBadge") object faIdBadge extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faIdCard") object faIdCard extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faImage") object faImage extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faImages") object faImages extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faKeyboard") object faKeyboard extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faLemon") object faLemon extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faLifeRing") object faLifeRing extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faLightbulb") object faLightbulb extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faListAlt") object faListAlt extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faMap") object faMap extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faMeh") object faMeh extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faMinusSquare") object faMinusSquare extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faMoneyBillAlt") object faMoneyBillAlt extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faMoon") object faMoon extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faNewspaper") object faNewspaper extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faObjectGroup") object faObjectGroup extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faObjectUngroup") object faObjectUngroup extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faPaperPlane") object faPaperPlane extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faPauseCircle") object faPauseCircle extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faPlayCircle") object faPlayCircle extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faPlusSquare") object faPlusSquare extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faQuestionCircle") object faQuestionCircle extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faRegistered") object faRegistered extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faSave") object faSave extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faShareSquare") object faShareSquare extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faSmile") object faSmile extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faSnowflake") object faSnowflake extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faSquare") object faSquare extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faStar") object faStar extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faStarHalf") object faStarHalf extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faStickyNote") object faStickyNote extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faStopCircle") object faStopCircle extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faSun") object faSun extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faThumbsDown") object faThumbsDown extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faThumbsUp") object faThumbsUp extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faTimesCircle") object faTimesCircle extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faTrashAlt") object faTrashAlt extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faUser") object faUser extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faUserCircle") object faUserCircle extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faWindowClose") object faWindowClose extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faWindowMaximize") object faWindowMaximize extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faWindowMinimize") object faWindowMinimize extends IconDefinition
+  @js.native @JSImport("@fortawesome/fontawesome-free-solid", "faWindowRestore") object faWindowRestore extends IconDefinition
 }
 
