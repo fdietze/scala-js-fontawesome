@@ -27,9 +27,9 @@ package fontAwesome {
     val icon:String = js.native
   }
 
-  // https://github.com/FortAwesome/Font-Awesome/blob/master/advanced-options/use-with-node-js/fontawesome/index.d.ts
+  // https://github.com/FortAwesome/Font-Awesome/blob/master/advanced-options/use-with-node-js/fontawesome-svg-core/index.d.ts
   @js.native
-  @JSImport("@fortawesome/fontawesome", JSImport.Default)
+  @JSImport("@fortawesome/fontawesome-svg-core", JSImport.Default)
   object fontawesome extends js.Object {
     def noAuto():Unit = js.native
     def findIconDefinition(iconLookup: IconLookup): IconDefinition = js.native

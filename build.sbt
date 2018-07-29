@@ -8,21 +8,25 @@ crossScalaVersions := Seq("2.11.12", "2.12.6")
 enablePlugins(ScalaJSPlugin, ScalaJSBundlerPlugin)
 
 libraryDependencies ++= (
-  "org.scala-js" %%% "scalajs-dom" % "0.9.5" ::
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6" ::
+  "io.monix" %%% "minitest" % "2.1.1" % "test" ::
   Nil
 )
 
-val fontawesomeVersion = "5.0.13"
+testFrameworks += new TestFramework("minitest.runner.Framework")
+
+val fontawesomeVersion = "5.2.0"
 npmDependencies in Compile ++= (
-  // https://fontawesome.com/how-to-use/js-component-packages
-  "@fortawesome/fontawesome" -> "1.1.8" ::
-  "@fortawesome/fontawesome-free-solid" -> fontawesomeVersion ::
-  "@fortawesome/fontawesome-free-regular" -> fontawesomeVersion ::
-  "@fortawesome/fontawesome-free-brands" -> fontawesomeVersion ::
+  // https://fontawesome.com/how-to-use/with-the-api/setup/library
+  "@fortawesome/fontawesome-svg-core" -> "1.2.2" ::
+  "@fortawesome/free-solid-svg-icons" -> fontawesomeVersion ::
+  "@fortawesome/free-regular-svg-icons" -> fontawesomeVersion ::
+  "@fortawesome/free-brands-svg-icons" -> fontawesomeVersion ::
   Nil
 )
 
 useYarn := true
+requiresDOM := true // still required by bundler: https://github.com/scalacenter/scalajs-bundler/issues/181
 
 scalacOptions ++=
   "-encoding" :: "UTF-8" ::
