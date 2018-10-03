@@ -52,22 +52,17 @@ package fontAwesome {
     def `abstract`: js.Array[AbstractElement] = js.native
     def html:js.Array[String] = js.native
     def node:HTMLCollection = js.native
+    val `type`: String = js.native
   }
 
   @js.native
-  trait Icon extends FontawesomeObject with IconDefinition {
-    val `type`:String = js.native
-  }
+  trait Icon extends FontawesomeObject with IconDefinition
 
   @js.native
-  trait Text extends FontawesomeObject {
-    val `type`:String = js.native
-  }
+  trait Text extends FontawesomeObject
 
   @js.native
-  trait Layer extends FontawesomeObject {
-    val `type`:String = js.native
-  }
+  trait Layer extends FontawesomeObject
 
   trait Transform extends js.Object {
     var size: js.UndefOr[Double] = js.undefined
