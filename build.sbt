@@ -2,8 +2,8 @@ organization := "com.github.fdietze"
 name := "scala-js-fontawesome"
 version := "master-SNAPSHOT"
 
-scalaVersion in ThisBuild := "2.12.6"
-crossScalaVersions := Seq("2.11.12", "2.12.6")
+scalaVersion in ThisBuild := "2.12.8"
+crossScalaVersions := Seq("2.11.12", "2.12.8")
 
 enablePlugins(ScalaJSPlugin, ScalaJSBundlerPlugin)
 
