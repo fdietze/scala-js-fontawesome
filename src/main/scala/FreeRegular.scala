@@ -7,7 +7,7 @@ object freeRegular {
   // https://github.com/FortAwesome/Font-Awesome/blob/master/advanced-options/use-with-node-js/free-regular-svg-icons/index.d.ts
   // https://fontawesome.com/how-to-use/with-the-api/other/tree-shaking
   // generate directives using vim:
-  // :read !export FAVERSION=5.2.0 PACK=free-regular; curl --silent https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$FAVERSION/advanced-options/use-with-node-js/$PACK-svg-icons/index.d.ts | grep "export const fa[A-Z]" | sed -E "s/export const (.+): IconDefinition;/  @js.native @JSImport(\"@fortawesome\/$PACK-svg-icons\/\1\", \"\1\") object \1 extends IconDefinition/"
+  // :read !export FAVERSION=5.6.3 PACK=free-regular; curl --silent https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$FAVERSION/js-packages/@fortawesome/$PACK-svg-icons/index.d.ts | grep "export const fa[A-Z]" | sed -E "s/export const (.+): IconDefinition;/  @js.native @JSImport(\"@fortawesome\/$PACK-svg-icons\/\1\", \"\1\") object \1 extends IconDefinition/"
 
   @js.native @JSImport("@fortawesome/free-regular-svg-icons/faAddressBook", "faAddressBook") object faAddressBook extends IconDefinition
   @js.native @JSImport("@fortawesome/free-regular-svg-icons/faAddressCard", "faAddressCard") object faAddressCard extends IconDefinition
@@ -161,5 +161,6 @@ object freeRegular {
   @js.native @JSImport("@fortawesome/free-regular-svg-icons/faWindowMaximize", "faWindowMaximize") object faWindowMaximize extends IconDefinition
   @js.native @JSImport("@fortawesome/free-regular-svg-icons/faWindowMinimize", "faWindowMinimize") object faWindowMinimize extends IconDefinition
   @js.native @JSImport("@fortawesome/free-regular-svg-icons/faWindowRestore", "faWindowRestore") object faWindowRestore extends IconDefinition
+
 }
 

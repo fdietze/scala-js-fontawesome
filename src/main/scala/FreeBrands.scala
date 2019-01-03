@@ -7,14 +7,17 @@ object freeBrands {
   // https://github.com/FortAwesome/Font-Awesome/blob/master/advanced-options/use-with-node-js/free-brands-svg-icons/index.d.ts
   // https://fontawesome.com/how-to-use/with-the-api/other/tree-shaking
   // generate directives using vim:
-  // :read !export FAVERSION=5.2.0 PACK=free-brands; curl --silent https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$FAVERSION/advanced-options/use-with-node-js/$PACK-svg-icons/index.d.ts | grep "export const fa[A-Z]" | sed -E "s/export const (.+): IconDefinition;/  @js.native @JSImport(\"@fortawesome\/$PACK-svg-icons\/\1\", \"\1\") object \1 extends IconDefinition/"
+  // :read !export FAVERSION=5.6.3 PACK=free-brands; curl --silent https://raw.githubusercontent.com/FortAwesome/Font-Awesome/$FAVERSION/js-packages/@fortawesome/$PACK-svg-icons/index.d.ts | grep "export const fa[A-Z]" | sed -E "s/export const (.+): IconDefinition;/  @js.native @JSImport(\"@fortawesome\/$PACK-svg-icons\/\1\", \"\1\") object \1 extends IconDefinition/"
 
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAccessibleIcon", "faAccessibleIcon") object faAccessibleIcon extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAccusoft", "faAccusoft") object faAccusoft extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAcquisitionsIncorporated", "faAcquisitionsIncorporated") object faAcquisitionsIncorporated extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAdn", "faAdn") object faAdn extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAdobe", "faAdobe") object faAdobe extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAdversal", "faAdversal") object faAdversal extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAffiliatetheme", "faAffiliatetheme") object faAffiliatetheme extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAlgolia", "faAlgolia") object faAlgolia extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAlipay", "faAlipay") object faAlipay extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAmazon", "faAmazon") object faAmazon extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAmazonPay", "faAmazonPay") object faAmazonPay extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAmilia", "faAmilia") object faAmilia extends IconDefinition
@@ -27,7 +30,9 @@ object freeBrands {
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faApper", "faApper") object faApper extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faApple", "faApple") object faApple extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faApplePay", "faApplePay") object faApplePay extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faArtstation", "faArtstation") object faArtstation extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAsymmetrik", "faAsymmetrik") object faAsymmetrik extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAtlassian", "faAtlassian") object faAtlassian extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAudible", "faAudible") object faAudible extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAutoprefixer", "faAutoprefixer") object faAutoprefixer extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faAvianex", "faAvianex") object faAvianex extends IconDefinition
@@ -49,6 +54,7 @@ object freeBrands {
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faBtc", "faBtc") object faBtc extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faBuromobelexperte", "faBuromobelexperte") object faBuromobelexperte extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faBuysellads", "faBuysellads") object faBuysellads extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCanadianMapleLeaf", "faCanadianMapleLeaf") object faCanadianMapleLeaf extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCcAmazonPay", "faCcAmazonPay") object faCcAmazonPay extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCcAmex", "faCcAmex") object faCcAmex extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCcApplePay", "faCcApplePay") object faCcApplePay extends IconDefinition
@@ -60,12 +66,14 @@ object freeBrands {
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCcStripe", "faCcStripe") object faCcStripe extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCcVisa", "faCcVisa") object faCcVisa extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCentercode", "faCentercode") object faCentercode extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCentos", "faCentos") object faCentos extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faChrome", "faChrome") object faChrome extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCloudscale", "faCloudscale") object faCloudscale extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCloudsmith", "faCloudsmith") object faCloudsmith extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCloudversify", "faCloudversify") object faCloudversify extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCodepen", "faCodepen") object faCodepen extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCodiepie", "faCodiepie") object faCodiepie extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faConfluence", "faConfluence") object faConfluence extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faConnectdevelop", "faConnectdevelop") object faConnectdevelop extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faContao", "faContao") object faContao extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCpanel", "faCpanel") object faCpanel extends IconDefinition
@@ -82,15 +90,21 @@ object freeBrands {
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCreativeCommonsSampling", "faCreativeCommonsSampling") object faCreativeCommonsSampling extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCreativeCommonsSamplingPlus", "faCreativeCommonsSamplingPlus") object faCreativeCommonsSamplingPlus extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCreativeCommonsShare", "faCreativeCommonsShare") object faCreativeCommonsShare extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCreativeCommonsZero", "faCreativeCommonsZero") object faCreativeCommonsZero extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCriticalRole", "faCriticalRole") object faCriticalRole extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCss3", "faCss3") object faCss3 extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCss3Alt", "faCss3Alt") object faCss3Alt extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faCuttlefish", "faCuttlefish") object faCuttlefish extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faDAndD", "faDAndD") object faDAndD extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faDAndDBeyond", "faDAndDBeyond") object faDAndDBeyond extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faDashcube", "faDashcube") object faDashcube extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faDelicious", "faDelicious") object faDelicious extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faDeploydog", "faDeploydog") object faDeploydog extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faDeskpro", "faDeskpro") object faDeskpro extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faDev", "faDev") object faDev extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faDeviantart", "faDeviantart") object faDeviantart extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faDhl", "faDhl") object faDhl extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faDiaspora", "faDiaspora") object faDiaspora extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faDigg", "faDigg") object faDigg extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faDigitalOcean", "faDigitalOcean") object faDigitalOcean extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faDiscord", "faDiscord") object faDiscord extends IconDefinition
@@ -119,6 +133,10 @@ object freeBrands {
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faFacebookF", "faFacebookF") object faFacebookF extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faFacebookMessenger", "faFacebookMessenger") object faFacebookMessenger extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faFacebookSquare", "faFacebookSquare") object faFacebookSquare extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faFantasyFlightGames", "faFantasyFlightGames") object faFantasyFlightGames extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faFedex", "faFedex") object faFedex extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faFedora", "faFedora") object faFedora extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faFigma", "faFigma") object faFigma extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faFirefox", "faFirefox") object faFirefox extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faFirstOrder", "faFirstOrder") object faFirstOrder extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faFirstOrderAlt", "faFirstOrderAlt") object faFirstOrderAlt extends IconDefinition
@@ -182,13 +200,16 @@ object freeBrands {
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faHubspot", "faHubspot") object faHubspot extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faImdb", "faImdb") object faImdb extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faInstagram", "faInstagram") object faInstagram extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faIntercom", "faIntercom") object faIntercom extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faInternetExplorer", "faInternetExplorer") object faInternetExplorer extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faInvision", "faInvision") object faInvision extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faIoxhost", "faIoxhost") object faIoxhost extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faItunes", "faItunes") object faItunes extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faItunesNote", "faItunesNote") object faItunesNote extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faJava", "faJava") object faJava extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faJediOrder", "faJediOrder") object faJediOrder extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faJenkins", "faJenkins") object faJenkins extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faJira", "faJira") object faJira extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faJoget", "faJoget") object faJoget extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faJoomla", "faJoomla") object faJoomla extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faJs", "faJs") object faJs extends IconDefinition
@@ -223,6 +244,7 @@ object freeBrands {
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faMedrt", "faMedrt") object faMedrt extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faMeetup", "faMeetup") object faMeetup extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faMegaport", "faMegaport") object faMegaport extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faMendeley", "faMendeley") object faMendeley extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faMicrosoft", "faMicrosoft") object faMicrosoft extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faMix", "faMix") object faMix extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faMixcloud", "faMixcloud") object faMixcloud extends IconDefinition
@@ -251,6 +273,7 @@ object freeBrands {
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faPalfed", "faPalfed") object faPalfed extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faPatreon", "faPatreon") object faPatreon extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faPaypal", "faPaypal") object faPaypal extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faPennyArcade", "faPennyArcade") object faPennyArcade extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faPeriscope", "faPeriscope") object faPeriscope extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faPhabricator", "faPhabricator") object faPhabricator extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faPhoenixFramework", "faPhoenixFramework") object faPhoenixFramework extends IconDefinition
@@ -271,15 +294,17 @@ object freeBrands {
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faQuinscape", "faQuinscape") object faQuinscape extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faQuora", "faQuora") object faQuora extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faRProject", "faRProject") object faRProject extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faRaspberryPi", "faRaspberryPi") object faRaspberryPi extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faRavelry", "faRavelry") object faRavelry extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faReact", "faReact") object faReact extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faReacteurope", "faReacteurope") object faReacteurope extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faReadme", "faReadme") object faReadme extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faRebel", "faRebel") object faRebel extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faRedRiver", "faRedRiver") object faRedRiver extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faReddit", "faReddit") object faReddit extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faRedditAlien", "faRedditAlien") object faRedditAlien extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faRedditSquare", "faRedditSquare") object faRedditSquare extends IconDefinition
-  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faRendact", "faRendact") object faRendact extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faRedhat", "faRedhat") object faRedhat extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faRenren", "faRenren") object faRenren extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faReplyd", "faReplyd") object faReplyd extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faResearchgate", "faResearchgate") object faResearchgate extends IconDefinition
@@ -300,6 +325,7 @@ object freeBrands {
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSimplybuilt", "faSimplybuilt") object faSimplybuilt extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSistrix", "faSistrix") object faSistrix extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSith", "faSith") object faSith extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSketch", "faSketch") object faSketch extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSkyatlas", "faSkyatlas") object faSkyatlas extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSkype", "faSkype") object faSkype extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSlack", "faSlack") object faSlack extends IconDefinition
@@ -309,6 +335,7 @@ object freeBrands {
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSnapchatGhost", "faSnapchatGhost") object faSnapchatGhost extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSnapchatSquare", "faSnapchatSquare") object faSnapchatSquare extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSoundcloud", "faSoundcloud") object faSoundcloud extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSourcetree", "faSourcetree") object faSourcetree extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSpeakap", "faSpeakap") object faSpeakap extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSpotify", "faSpotify") object faSpotify extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSquarespace", "faSquarespace") object faSquarespace extends IconDefinition
@@ -327,12 +354,15 @@ object freeBrands {
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faStumbleuponCircle", "faStumbleuponCircle") object faStumbleuponCircle extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSuperpowers", "faSuperpowers") object faSuperpowers extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSupple", "faSupple") object faSupple extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faSuse", "faSuse") object faSuse extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faTeamspeak", "faTeamspeak") object faTeamspeak extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faTelegram", "faTelegram") object faTelegram extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faTelegramPlane", "faTelegramPlane") object faTelegramPlane extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faTencentWeibo", "faTencentWeibo") object faTencentWeibo extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faTheRedYeti", "faTheRedYeti") object faTheRedYeti extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faThemeco", "faThemeco") object faThemeco extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faThemeisle", "faThemeisle") object faThemeisle extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faThinkPeaks", "faThinkPeaks") object faThinkPeaks extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faTradeFederation", "faTradeFederation") object faTradeFederation extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faTrello", "faTrello") object faTrello extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faTripadvisor", "faTripadvisor") object faTripadvisor extends IconDefinition
@@ -343,10 +373,13 @@ object freeBrands {
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faTwitterSquare", "faTwitterSquare") object faTwitterSquare extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faTypo3", "faTypo3") object faTypo3 extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faUber", "faUber") object faUber extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faUbuntu", "faUbuntu") object faUbuntu extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faUikit", "faUikit") object faUikit extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faUniregistry", "faUniregistry") object faUniregistry extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faUntappd", "faUntappd") object faUntappd extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faUps", "faUps") object faUps extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faUsb", "faUsb") object faUsb extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faUsps", "faUsps") object faUsps extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faUssunnah", "faUssunnah") object faUssunnah extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faVaadin", "faVaadin") object faVaadin extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faViacoin", "faViacoin") object faViacoin extends IconDefinition
@@ -369,12 +402,14 @@ object freeBrands {
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faWikipediaW", "faWikipediaW") object faWikipediaW extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faWindows", "faWindows") object faWindows extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faWix", "faWix") object faWix extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faWizardsOfTheCoast", "faWizardsOfTheCoast") object faWizardsOfTheCoast extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faWolfPackBattalion", "faWolfPackBattalion") object faWolfPackBattalion extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faWordpress", "faWordpress") object faWordpress extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faWordpressSimple", "faWordpressSimple") object faWordpressSimple extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faWpbeginner", "faWpbeginner") object faWpbeginner extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faWpexplorer", "faWpexplorer") object faWpexplorer extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faWpforms", "faWpforms") object faWpforms extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faWpressr", "faWpressr") object faWpressr extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faXbox", "faXbox") object faXbox extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faXing", "faXing") object faXing extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faXingSquare", "faXingSquare") object faXingSquare extends IconDefinition
@@ -382,9 +417,11 @@ object freeBrands {
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faYahoo", "faYahoo") object faYahoo extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faYandex", "faYandex") object faYandex extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faYandexInternational", "faYandexInternational") object faYandexInternational extends IconDefinition
+  @js.native @JSImport("@fortawesome/free-brands-svg-icons/faYarn", "faYarn") object faYarn extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faYelp", "faYelp") object faYelp extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faYoast", "faYoast") object faYoast extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faYoutube", "faYoutube") object faYoutube extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faYoutubeSquare", "faYoutubeSquare") object faYoutubeSquare extends IconDefinition
   @js.native @JSImport("@fortawesome/free-brands-svg-icons/faZhihu", "faZhihu") object faZhihu extends IconDefinition
+
 }
