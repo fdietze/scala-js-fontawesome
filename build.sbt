@@ -15,10 +15,10 @@ libraryDependencies ++= (
 
 testFrameworks += new TestFramework("minitest.runner.Framework")
 
-val fontawesomeVersion = "5.2.0"
+val fontawesomeVersion = "5.6.3"
 npmDependencies in Compile ++= (
   // https://fontawesome.com/how-to-use/with-the-api/setup/library
-  "@fortawesome/fontawesome-svg-core" -> "1.2.2" ::
+  "@fortawesome/fontawesome-svg-core" -> "1.2.12" ::
   "@fortawesome/free-solid-svg-icons" -> fontawesomeVersion ::
   "@fortawesome/free-regular-svg-icons" -> fontawesomeVersion ::
   "@fortawesome/free-brands-svg-icons" -> fontawesomeVersion ::
