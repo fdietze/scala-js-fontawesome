@@ -37,7 +37,7 @@ package fontAwesome {
     def text(content: String, params: Params): Text = js.native
     def icon(icon:IconName | IconLookup):Icon = js.native
     def icon(icon:IconName | IconLookup, params: Params):Icon = js.native
-    def layer(assember:js.Function1[js.Function1[Icon | js.Array[Icon],Unit],Unit]):Layer = js.native
+    def layer(assember:js.Function1[js.Function1[Icon | Text | js.Array[Icon | Text],Unit],Unit]): Layer = js.native
   }
 
   @js.native
