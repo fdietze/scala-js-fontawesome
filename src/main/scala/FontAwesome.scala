@@ -12,6 +12,9 @@ package object fontAwesome {
   type Attributes = js.Dictionary[Double | String]
   type Styles = js.Dictionary[String]
   type FaSymbol = String | Boolean
+  implicit class FontAwesomeOpts(val fa: fontawesome.type) extends AnyVal {
+    def layered(layers: (Icon | Text)*): Layer = fa.layer(push => layers.foreach(push(_)))
+  }
 }
 
 package fontAwesome {
