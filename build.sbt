@@ -2,14 +2,14 @@ organization := "com.github.fdietze"
 name := "scala-js-fontawesome"
 version := "master-SNAPSHOT"
 
-scalaVersion in ThisBuild := "2.12.8"
-crossScalaVersions := Seq("2.11.12", "2.12.8")
+scalaVersion in ThisBuild := crossScalaVersions.value.last
+crossScalaVersions := Seq("2.11.12", "2.12.8", "2.13.0")
 
 enablePlugins(ScalaJSPlugin, ScalaJSBundlerPlugin)
 
 libraryDependencies ++= (
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6" ::
-  "io.monix" %%% "minitest" % "2.1.1" % "test" ::
+  "org.scala-js" %%% "scalajs-dom" % "0.9.7" ::
+  "io.monix" %%% "minitest" % "2.5.0" % "test" ::
   Nil
 )
 
@@ -26,7 +26,7 @@ npmDependencies in Compile ++= (
 )
 
 useYarn := true
-requiresDOM := true // still required by bundler: https://github.com/scalacenter/scalajs-bundler/issues/181
+requireJsDomEnv in Test := true
 
 scalacOptions ++=
   "-encoding" :: "UTF-8" ::
@@ -37,12 +37,6 @@ scalacOptions ++=
   "-language:_" ::
   "-Xfuture" ::
   "-Xlint" ::
-  "-Ypartial-unification" ::
-  "-Yno-adapted-args" ::
-  "-Ywarn-infer-any" ::
-  "-Ywarn-value-discard" ::
-  "-Ywarn-nullary-override" ::
-  "-Ywarn-nullary-unit" ::
   "-P:scalajs:sjsDefinedByDefault" ::
   Nil
 
