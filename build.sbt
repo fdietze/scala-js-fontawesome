@@ -8,7 +8,7 @@ crossScalaVersions := Seq("2.11.12", "2.12.8", "2.13.0")
 enablePlugins(ScalaJSPlugin, ScalaJSBundlerPlugin)
 
 libraryDependencies ++= (
-  "org.scala-js" %%% "scalajs-dom" % "0.9.8" ::
+  "org.scala-js" %%% "scalajs-dom" % "1.0.0" ::
   "io.monix" %%% "minitest" % "2.7.0" % "test" ::
   Nil
 )
