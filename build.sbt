@@ -9,7 +9,7 @@ enablePlugins(ScalaJSPlugin, ScalaJSBundlerPlugin)
 
 libraryDependencies ++= (
   "org.scala-js" %%% "scalajs-dom" % "1.0.0" ::
-  "io.monix" %%% "minitest" % "2.7.0" % "test" ::
+  "io.monix" %%% "minitest" % "2.8.2" % "test" ::
   Nil
 )
 
