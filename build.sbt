@@ -3,7 +3,7 @@ name := "scala-js-fontawesome"
 version := "master-SNAPSHOT"
 
 scalaVersion in ThisBuild := crossScalaVersions.value.last
-crossScalaVersions := Seq("2.12.12", "2.13.3")
+crossScalaVersions := Seq("2.12.12", "2.13.7")
 
 enablePlugins(ScalaJSPlugin, ScalaJSBundlerPlugin)
 
