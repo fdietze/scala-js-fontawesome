@@ -5,6 +5,7 @@ version      := "master-SNAPSHOT"
 crossScalaVersions        := Seq("2.12.15", "2.13.7", "3.1.0")
 scalaVersion in ThisBuild := crossScalaVersions.value.last
 
+scalacOptions --= Seq("-Xfatal-warnings") // overwrite sbt-tpolecat setting
 enablePlugins(ScalaJSPlugin, ScalaJSBundlerPlugin)
 
 libraryDependencies ++= (
