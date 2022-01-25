@@ -40,24 +40,22 @@ Facade for the JS/SVG version of the FontAwesome icons.
 
 ```scala
 import fontAwesome._
-import outwatch.dom._
-import scala.collection.breakOut
+import outwatch._
+import scala.scalajs.js
 
-def abstractElementToVNode(tree:AbstractElement):VNode = {
-  import outwatch.dom.dsl.{attr, tag}
-  tag(tree.tag)(
-    tree.attributes.map{case (name,value) => attr(name) := value}(breakOut):Seq[VDomModifier],
-    tree.children.fold(Seq.empty[VNode]){_.map(abstractElementToVNode)}
-  )
+def abstractElementToVNode(tree: AbstractElement): VNode = {
+    import outwatch.dsl.{attr, svgTag}
+    svgTag(tree.tag)(
+        tree.attributes.map { case (name, value) => attr(name) := value }.toSeq,
+        tree.children.fold(new js.Array[VNode])(_.map(abstractElementToVNode)),
+    )
 }
 
-implicit def renderFontAwesomeIcon(icon:IconLookup):VNode = {
-  abstractElementToVNode(fontawesome.icon(icon).`abstract`(0))
-}
+implicit def renderFontAwesomeIcon(icon: IconLookup): VNode =
+    abstractElementToVNode(fontawesome.icon(icon).`abstract`(0))
 
-implicit def renderFontAwesomeObject(icon:FontawesomeObject):VNode = {
-  abstractElementToVNode(icon.`abstract`(0))
-}
+implicit def renderFontAwesomeObject(icon: FontawesomeObject): VNode =
+    abstractElementToVNode(icon.`abstract`(0))
 ```
 
 ```scala
