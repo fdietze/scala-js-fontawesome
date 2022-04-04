@@ -7,8 +7,7 @@ Facade for the JS/SVG version of the FontAwesome icons.
 * In your `build.sbt`:
   ```scala
   resolvers += "jitpack" at "https://jitpack.io"
-  libraryDependencies += "com.github.fdietze" % "scala-js-fontawesome" % "master-SNAPSHOT"
-  // instead of "master-SNAPSHOT" you can also use the latest commit hash to get a stable build
+  libraryDependencies += "com.github.fdietze.scala-js-fontawesome" %%% "scala-js-fontawesome" % "a412650e7f"
   ```
 
 * Use it like described in the api documentation (https://fontawesome.com/how-to-use/font-awesome-api):
