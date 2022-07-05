@@ -2,7 +2,7 @@ organization := "com.github.fdietze"
 name         := "scala-js-fontawesome"
 version      := "master-SNAPSHOT"
 
-crossScalaVersions        := Seq("2.12.15", "2.13.8", "3.1.2")
+crossScalaVersions        := Seq("2.12.15", "2.13.8", "3.1.3")
 scalaVersion in ThisBuild := crossScalaVersions.value.last
 
 scalacOptions --= Seq("-Xfatal-warnings") // overwrite sbt-tpolecat setting
