@@ -9,7 +9,7 @@ scalacOptions --= Seq("-Xfatal-warnings") // overwrite sbt-tpolecat setting
 enablePlugins(ScalaJSPlugin, ScalaJSBundlerPlugin)
 
 libraryDependencies ++= (
-  "org.scala-js" %%% "scalajs-dom" % "2.2.0" ::
+  "org.scala-js" %%% "scalajs-dom" % "2.3.0" ::
     "io.monix"   %%% "minitest"    % "2.9.6" % "test" ::
     Nil
 )
